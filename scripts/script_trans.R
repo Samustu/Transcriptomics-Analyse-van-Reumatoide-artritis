@@ -86,6 +86,7 @@ dds <- DESeqDataSetFromMatrix(countData = counts,
 
 dds <- DESeq(dds)
 resultaten <- results(dds)
+resultaten
 
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange > 1, na.rm = TRUE)
 sum(resultaten$padj < 0.05 & resultaten$log2FoldChange < -1, na.rm = TRUE)
@@ -106,11 +107,65 @@ dev.copy(png, 'VolcanoplotWC.png',
          res = 500)
 dev.off()
 
-# Maak vector voor goseq (1 = DEG, 0 = niet DEG)
-DEgenes <- as.integer(resultaten$padj < 0.05)
-names(DEgenes) <- rownames(resultaten)
-
+#GO-analyse
 BiocManager::install("goseq")
 library(goseq)
 
-pwf <- nullp(DEgenes, bias.data = NULL)
+de_genes <- rownames(resultaten)[which(resultaten$padj < 0.05)]
+
+
+gene_vector <- as.integer(rownames(resultaten) %in% de_genes)
+names(gene_vector) <- rownames(resultaten)
+
+
+table(gene_vector)
+
+supportedOrganisms()
+
+pwf <- nullp(gene_vector, "hg19", "geneSymbol")
+
+GO_results <- goseq(pwf, "hg19", "geneSymbol")
+
+head(GO_results)
+
+sig_GO <- GO_results[GO_results$over_represented_pvalue < 0.05, ]
+
+sig_GO <- sig_GO[order(sig_GO$over_represented_pvalue), ]
+
+head(sig_GO, 10)
+
+write.csv(sig_GO, "GO_results_RA.csv")
+
+library(dplyr)
+library(ggplot2)
+
+topGO <- sig_GO %>%
+  slice_min(order_by = over_represented_pvalue, n = 10) %>%
+  mutate(hitsPerc = numDEInCat * 100 / numInCat)
+
+ggplot(topGO, aes(x = hitsPerc,
+                  y = reorder(term, hitsPerc),
+                  colour = over_represented_pvalue,
+                  size = numDEInCat)) +
+  geom_point() +
+  labs(x = "Hits (%)",
+       y = "GO term",
+       colour = "p-value",
+       size = "Number of DE genes",
+       title = "Top 10 GO terms (RA vs Control)") +
+  theme_minimal()
+
+#pathway
+res_def <- as.data.frame(resultaten)
+gene.data <- res_def$log2Foldchange
+resultaten2 <- res_def
+resultaten2[1] <- NULL
+resultaten2[2:5] <- NULL
+
+pathview(
+  gene.data = resultaten,
+  pathway.id = "hsa05320",  
+  species = "hsa",          
+  gene.idtype = "SYMBOL",     
+  limit = list(gene = 5)    
+)
