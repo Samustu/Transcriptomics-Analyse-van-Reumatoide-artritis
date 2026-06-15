@@ -48,17 +48,17 @@ De Gene Ontology analyse laat zien dat de meeste differentieel geëxprimeerde ge
 
 ### Volcano plot  
 <p align="center">
-  resultaten/figuren/VolcanoplotWC.png
+  resultaten/Figuren/VolcanoplotWC.png
 </p>
 
 ### GO analyse (Top 10)  
 <p align="center">
-  resultaten/figuren/GO_Results_plot.png
+  resultaten/Figuren/GO_Results_plot.png
 </p>
 
 ### KEGG pathway (detail gebruikt in analyse)  
 <p align="center">
-  resultaten/figuren/hsa05320.pathview.png
+  resultaten/Figuren/hsa05320.pathview.png
 </p>
 
 ---
