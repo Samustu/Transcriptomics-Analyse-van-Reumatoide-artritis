@@ -48,17 +48,23 @@ De Gene Ontology analyse laat zien dat de meeste differentieel geëxprimeerde ge
 
 ### Volcano plot  
 <p align="center">
-  resultaten/Figuren/VolcanoplotWC.png
+  <img src="resultaten/Figuren/VolcanoplotWC.png" width="600"/>
 </p>
 
 ### GO analyse (Top 10)  
 <p align="center">
-  resultaten/Figuren/GO_Results_plot.png
+  <img src="resultaten/Figuren/GO_Results_plot.png" width="600"/>
 </p>
 
 ### KEGG pathway (detail gebruikt in analyse)  
 <p align="center">
-  resultaten/Figuren/hsa05320.pathview.png
+  <img src="resultaten/Figuren/hsa05320.pathview.png" width="600"/>
 </p>
 
 ---
+
+## ✅ Conclusie  
+
+De resultaten tonen aan dat reumatoïde artritis sterk wordt gekenmerkt door ontregeling van het immuunsysteem. Met name processen zoals adaptieve immuunrespons, leukocytenactivatie en antilichaamvorming spelen een belangrijke rol.  
+
+De analyse van T-cel activatie laat zien dat signaleringsroutes betrokken bij immuunactivatie verhoogd actief zijn bij RA-patiënten. Deze inzichten dragen bij aan een beter begrip van de ziekte en kunnen helpen bij het identificeren van nieuwe therapeutische doelwitten.  
