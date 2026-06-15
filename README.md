@@ -35,3 +35,30 @@ De differentiële expressieanalyse is uitgevoerd met *DESeq2* (v1.44.0), waarbij
 Functionele analyse is uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology en met *pathview* (v1.44.0) en *KEGGREST* (v1.44.0) voor pathway-analyse. Visualisaties zijn gemaakt met *ggplot2* (v3.5.1) en *dplyr* (v1.1.4).  
 
 ---
+
+## 📊 Resultaten  
+
+De differentiële expressieanalyse toonde een groot aantal genen met significante veranderingen tussen RA en controles. De volcano plot laat zowel up- als downregulated genen zien, waarbij meerdere genen een hoge log2 fold change en lage p-waarde vertonen. Voorbeelden van sterk gereguleerde genen zijn *IGHV3-53*, *BCL2A1* en *PTGFR*, die betrokken zijn bij immuunresponsen.  
+
+De Gene Ontology analyse laat zien dat de meeste differentieel geëxprimeerde genen betrokken zijn bij immuungerelateerde processen, zoals *immune response*, *leukocyte activation* en *adaptive immune response*. Daarnaast wordt een sterke verrijking gevonden voor het *immunoglobulin complex*, wat wijst op een belangrijke rol van B-cellen en antilichamen.  
+
+---
+
+## 📈 Visualisaties  
+
+### Volcano plot  
+<p align="center">
+  resultaten/figuren/VolcanoplotWC.png
+</p>
+
+### GO analyse (Top 10)  
+<p align="center">
+  resultaten/figuren/GO_Results_plot.png
+</p>
+
+### KEGG pathway (detail gebruikt in analyse)  
+<p align="center">
+  resultaten/figuren/hsa05320.pathview.png
+</p>
+
+---
