@@ -17,7 +17,7 @@ Het doel van deze studie is om:
 ---
 
 ## 📂 Dataset  
-- 4 RA samples (synoviaal weefsel)  
+- 4 RA samples 
 - 4 controle samples  
 - RNA-seq paired-end data  
 - Referentiegenoom: GRCh38  
