@@ -1,22 +1,18 @@
 
 #  Transcriptomics Analysis of Rheumatoid Arthritis
 
-##  Project Description  
+##  Project Beschrijving  
 Reumatoïde artritis (RA) is een chronische systemische auto-immuunziekte die wordt gekenmerkt door ontsteking van het gewrichtsslijmvlies (synovitis), wat leidt tot progressieve gewrichtsschade. De oorzaak van RA is multifactorieel en omvat genetische aanleg, omgevingsfactoren en een ontregeld immuunsysteem.  
 
 In dit project wordt transcriptomics gebruikt om verschillen in genexpressie tussen RA-patiënten en gezonde controles te analyseren. Door middel van RNA-seq data worden genen en biologische pathways geïdentificeerd die betrokken zijn bij het ziekteproces.  
 
----
-
-##  Doelstelling  
+###  Doelstelling  
 Het doel van deze studie is om:  
 - differentieel geëxprimeerde genen te identificeren tussen RA en controles  
 - inzicht te krijgen in betrokken biologische processen  
 - relevante pathways te bepalen die een rol spelen in RA  
 
----
-
-##  Dataset  
+###  Dataset  
 - 4 RA samples 
 - 4 controle samples  
 - RNA-seq paired-end data  
@@ -41,10 +37,6 @@ Functionele analyse is uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology en me
 De differentiële expressieanalyse toonde een groot aantal genen met significante veranderingen tussen RA en controles. De volcano plot laat zowel up- als downregulated genen zien, waarbij meerdere genen een hoge log2 fold change en lage p-waarde vertonen. Voorbeelden van sterk gereguleerde genen zijn *IGHV3-53*, *BCL2A1* en *PTGFR*, die betrokken zijn bij immuunresponsen.  
 
 De Gene Ontology analyse laat zien dat de meeste differentieel geëxprimeerde genen betrokken zijn bij immuungerelateerde processen, zoals *immune response*, *leukocyte activation* en *adaptive immune response*. Daarnaast wordt een sterke verrijking gevonden voor het *immunoglobulin complex*, wat wijst op een belangrijke rol van B-cellen en antilichamen.  
-
----
-
-##  Visualisaties  
 
 ### Volcano plot  
 <p align="center">
