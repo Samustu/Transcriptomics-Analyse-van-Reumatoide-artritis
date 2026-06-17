@@ -1,16 +1,12 @@
 
 #  Transcriptomics-Analyse-van-Reumatoïde-artritis
 
-##  Project Beschrijving  
-Reumatoïde artritis (RA) is een chronische systemische auto-immuunziekte die wordt gekenmerkt door ontsteking van het gewrichtsslijmvlies (synovitis), wat leidt tot progressieve gewrichtsschade. De oorzaak van RA is multifactorieel en omvat genetische aanleg, omgevingsfactoren en een ontregeld immuunsysteem.  
+##  Inleiding  
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door ontsteking van synoviaal weefsel en progressieve gewrichtsschade. In deze aandoening migreren immuuncellen zoals T‑cellen, B‑cellen en macrofagen naar het gewricht, waar zij ontstekingsprocessen en weefselafbraak veroorzaken (Miyabe et al., 2020). Chemokines en cytokines spelen hierbij een belangrijke rol doordat zij de activatie en rekrutering van immuuncellen reguleren en zo bijdragen aan de pathologie van RA (Miyabe et al., 2020).  
 
-In dit project wordt transcriptomics gebruikt om verschillen in genexpressie tussen RA-patiënten en gezonde controles te analyseren. Door middel van RNA-seq data worden genen en biologische pathways geïdentificeerd die betrokken zijn bij het ziekteproces.  
+RNA sequencing (RNA-seq) maakt het mogelijk om genexpressie op genome-wide niveau te analyseren en verschillen tussen ziekte en controle te identificeren. Deze techniek wordt veel gebruikt om moleculaire mechanismen van ziekten te bestuderen en nieuwe biologische inzichten te verkrijgen (Love et al., 2014; Stephenson et al., 2018).  
 
-###  Doelstelling  
-Het doel van deze studie is om:  
-- differentieel geëxprimeerde genen te identificeren tussen RA en controles  
-- inzicht te krijgen in betrokken biologische processen  
-- relevante pathways te bepalen die een rol spelen in RA  
+Het doel van dit project is om met behulp van RNA-seq data differentieel geëxprimeerde genen tussen RA-patiënten en gezonde controles te identificeren. Daarnaast wordt onderzocht welke biologische processen (Gene Ontology) en pathways (KEGG) betrokken zijn bij de ziekte. Deze analyse draagt bij aan een beter begrip van de moleculaire basis van RA.
 
 ###  Dataset  
 - 4 RA samples 
@@ -21,14 +17,13 @@ Het doel van deze studie is om:
 ---
 
 ##  Methode  
+Voor deze studie is RNA sequencing (RNA-seq) data gebruikt van synoviaal weefsel: 4 reumatoïde artritis (RA) samples en 4 gezonde controles. RNA-seq maakt het mogelijk om genexpressie genome-wide te analyseren.  
 
-Voor deze analyse is gebruikgemaakt van RNA-seq data afkomstig van synoviaal weefsel van vier patiënten met reumatoïde artritis (RA) en vier gezonde controles. De ruwe sequencing reads (FASTQ-bestanden) zijn uitgelijnd tegen het humane referentiegenoom (GRCh38) met behulp van het *Rsubread* package (v2.18.0) in R (v4.4.1). Voor elke sample is een BAM-bestand gegenereerd, waarna deze bestanden zijn gesorteerd en geïndexeerd met het *Rsamtools* package (v2.20.0).  
+De analyse is uitgevoerd in R (v4.4.1) en Bioconductor (v3.19). Ruwe reads zijn uitgelijnd tegen het humane referentiegenoom (GRCh38) met Rsubread (v2.18.0). Vervolgens zijn reads toegewezen aan genen met featureCounts (v2.18.0), wat resulteerde in een count matrix.  
 
-Vervolgens is genquantificatie uitgevoerd met *featureCounts*, waarbij reads werden toegewezen aan genen op basis van een GTF-annotatiebestand. Dit resulteerde in een count matrix met het aantal reads per gen per sample.  
+Differentiële genexpressieanalyse is uitgevoerd met DESeq2 (v1.44.0), waarbij genen met een adjusted p-value < 0.05 en |log2 fold change| > 1 als significant werden beschouwd.  
 
-De differentiële expressieanalyse is uitgevoerd met *DESeq2* (v1.44.0), waarbij genen als significant werden beschouwd bij een adjusted p-value < 0.05 en |log2 fold change| > 1. Visualisatie is uitgevoerd met *EnhancedVolcano* (v1.22.0).  
-
-Functionele analyse is uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology en met *pathview* (v1.44.0) en *KEGGREST* (v1.44.0) voor pathway-analyse. Visualisaties zijn gemaakt met *ggplot2* (v3.5.1) en *dplyr* (v1.1.4).  
+Functionele analyse is uitgevoerd met goseq (v1.56.0) voor Gene Ontology, waarbij bias in RNA-seq data wordt gecorrigeerd. KEGG pathway analyse is uitgevoerd met KEGGREST (v1.44.0) en gevisualiseerd met pathview (v1.44.0).  
 
 ---
 
