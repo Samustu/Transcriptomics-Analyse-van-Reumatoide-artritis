@@ -8,12 +8,6 @@ RNA sequencing (RNA-seq) maakt het mogelijk om genexpressie op genome-wide nivea
 
 Het doel van dit project is om met behulp van RNA-seq data differentieel geëxprimeerde genen tussen RA-patiënten en gezonde controles te identificeren. Daarnaast wordt onderzocht welke biologische processen (Gene Ontology) en pathways (KEGG) betrokken zijn bij de ziekte. Deze analyse draagt bij aan een beter begrip van de moleculaire basis van RA.
 
-###  Dataset  
-- 4 RA samples 
-- 4 controle samples  
-- RNA-seq paired-end data  
-- Referentiegenoom: GRCh38  
-
 ---
 
 ##  Methode  
