@@ -115,11 +115,11 @@ Binnen de pathway werden verhoogde expressieniveaus waargenomen voor MHC II, CD2
 ---
 
 ##  Conclusie  
-Het doel van dit project was om genexpressieverschillen tussen reumatoïde artritispatiënten en gezonde controles te identificeren en biologisch te interpreteren. De differentiële genexpressieanalyse liet zien dat meerdere genen significant verschilden tussen beide groepen. Daarnaast identificeerde de Gene Ontology-analyse meerdere verrijkte biologische processen die voornamelijk gerelateerd waren aan immuunactiviteit.
+Het doel van dit project was om genexpressieverschillen tussen reumatoïde artritispatiënten en gezonde controles te identificeren en biologisch te interpreteren. De differentiële genexpressieanalyse identificeerde 4572 significant differentieel geëxprimeerde genen, waarvan 2085 genen opgereguleerd en 2487 genen neergereguleerd waren in de RA-groep. De volcano plot liet een duidelijke scheiding zien tussen beide groepen en benadrukte genen zoals *IGHV3-53*, *IGHV1-69*, *PTGFR*, *ANKRD30BL* en *MT-ND6*.
 
-De analyse van de KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) toonde veranderingen in genen betrokken bij antigeenpresentatie en T-celactivatie. Hierbij vertoonden MHC II, CD28 en IL-4 een verhoogde expressie, terwijl MHC I en IL-2 een verlaagde expressie lieten zien. Deze bevindingen wijzen op veranderingen in immuungerelateerde signaleringsroutes.
+De GO-analyse liet zien dat meerdere immuungerelateerde processen significant verrijkt waren, waaronder *immune response*, *adaptive immune response*, *leukocyte activation* en *immunoglobulin complex*. Daarnaast werden binnen de KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) veranderingen gevonden in genen betrokken bij antigeenpresentatie en T-celactivatie, waaronder MHC I, MHC II, CD28, IL-2 en IL-4.
 
-Door de combinatie van differentiële genexpressie-, GO- en KEGG-analyses werd meer inzicht verkregen in de moleculaire processen die geassocieerd zijn met reumatoïde artritis. De resultaten benadrukken het belang van immuungerelateerde mechanismen en laten zien hoe transcriptomics kan bijdragen aan het bestuderen van complexe auto-immuunziekten.
+Deze resultaten laten zien dat de waargenomen genexpressieveranderingen voornamelijk voorkomen in genen en processen die betrokken zijn bij immuunfuncties en bieden meer inzicht in de moleculaire mechanismen die geassocieerd zijn met reumatoïde artritis.
 
 Een beperking van dit project/study is dat de sample groep te klein is met 8
 
