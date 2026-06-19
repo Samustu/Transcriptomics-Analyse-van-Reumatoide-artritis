@@ -38,7 +38,7 @@ Functionele analyse werd uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology-ver
 De differentiële genexpressieanalyse met DESeq2 identificeerde meerdere significant differentieel geëxprimeerde genen tussen reumatoïde artritispatiënten en gezonde controles (padj < 0,05). Zowel opgereguleerde als neergereguleerde genen werden waargenomen.
 
 <p align="center">
-  resultaten/Figuren/VolcanoplotWC.png
+  <img src="resultaten/Figuren/VolcanoplotWC.png" width="600">
 </p>
 
 **Figuur 1.** Volcano plot van de differentiële genexpressieanalyse tussen RA- en controlesamples. Punten boven de significantiedrempel (padj < 0,05) vertegenwoordigen significant differentieel geëxprimeerde genen.
@@ -46,7 +46,7 @@ De differentiële genexpressieanalyse met DESeq2 identificeerde meerdere signifi
 Om de biologische betekenis van deze genexpressieveranderingen verder te onderzoeken, werd een Gene Ontology (GO)-analyse uitgevoerd. Hierbij werden meerdere significant verrijkte biologische processen gevonden (over_represented_pvalue < 0,05), waaronder verschillende processen gerelateerd aan immuunactiviteit.
 
 <p align="center">
-  resultaten/Figuren/GO_Results_plot.png
+  <img src="resultaten/Figuren/GO_Results_plot.png" width="600">
 </p>
 
 **Figuur 2.** Top verrijkte GO-termen van de differentieel geëxprimeerde genen.
@@ -54,7 +54,7 @@ Om de biologische betekenis van deze genexpressieveranderingen verder te onderzo
 Daarnaast werd een KEGG pathway-analyse uitgevoerd. Binnen de pathway *Autoimmune Thyroid Disease* (hsa05320) werden meerdere genen met veranderde expressie waargenomen.
 
 <p align="center">
-  resultaten/Figuren/hsa05320.pathview.png
+  <img src="resultaten/Figuren/hsa05320.pathview.png" width="600">
 </p>
 
 **Figuur 3.** KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) met weergegeven genexpressieveranderingen.
