@@ -11,16 +11,16 @@ Het doel van dit project is om met behulp van RNA-seq data inzicht te verkrijgen
 ---
 
 ##  Methode  
-Voor deze studie is RNA sequencing (RNA-seq) data gebruikt van synoviaal weefsel: 4 reumatoïde artritis (RA) samples en 4 gezonde controles. RNA-seq maakt het mogelijk om genexpressie genome-wide te analyseren.  
+Voor deze studie werd gebruikgemaakt van een publieke RNA-seq dataset van synoviaal weefsel afkomstig van 4 reumatoïde artritis (RA) patiënten en 4 gezonde controles. Uit het synoviale weefsel werd totaal RNA geïsoleerd en vervolgens gebruikt voor RNA sequencing (RNA-seq), waarmee genexpressie op genome-wide niveau kan worden bepaald (Fraenkel et al., 2021; Stephenson et al., 2018).
 
-De analyse is uitgevoerd in R (v4.4.1) en Bioconductor (v3.19). Ruwe reads zijn uitgelijnd tegen het humane referentiegenoom (GRCh38) met Rsubread (v2.18.0). Vervolgens zijn reads toegewezen aan genen met featureCounts (v2.18.0), wat resulteerde in een count matrix.  
+De bio-informatica-analyse is uitgevoerd in R (v4.4.1) en Bioconductor (v3.19). Ruwe sequencing reads werden uitgelijnd tegen het humane referentiegenoom (GRCh38) met *Rsubread* (v2.18.0) (Liao et al., 2019). Vervolgens werden reads toegewezen aan genen met *featureCounts* (v2.18.0), wat resulteerde in een count matrix (Liao et al., 2014).
 
-Differentiële genexpressieanalyse is uitgevoerd met DESeq2 (v1.44.0), waarbij genen met een adjusted p-value < 0.05 en |log2 fold change| > 1 als significant werden beschouwd.  
+Differentiële genexpressieanalyse werd uitgevoerd met *DESeq2* (v1.44.0). Genen met een adjusted p-value < 0,05 en een |log2 fold change| > 1 werden als significant beschouwd (Love et al., 2014).
 
-Functionele analyse is uitgevoerd met goseq (v1.56.0) voor Gene Ontology, waarbij bias in RNA-seq data wordt gecorrigeerd. KEGG pathway analyse is uitgevoerd met KEGGREST (v1.44.0) en gevisualiseerd met pathview (v1.44.0).  
+Functionele analyse werd uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology-verrijking (Young et al., 2010). KEGG pathway-analyse werd uitgevoerd met *KEGGREST* (v1.44.0) en gevisualiseerd met *pathview* (v1.44.0) (Kanehisa & Goto, 2000).
 
 
-
+**Tabel 1.** Overzicht van de gebruikte RNA-seq samples. De dataset bestaat uit vier gezonde controles (Normal) en vier patiënten met reumatoïde artritis (Rheumatoid arthritis).
 | Naam | Conditie |
 |------|-----------|
 | SRR4785819 | Normal |
