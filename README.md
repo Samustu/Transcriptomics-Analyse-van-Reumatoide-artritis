@@ -33,7 +33,10 @@ flowchart LR
     L --> N[GO-analyse]
     L --> O[KEGG-analyse]
 ```
-    
+**Figuur 1.** Workflow van de uitgevoerde transcriptomics-analyse.
+
+---
+
 ##  Methode  
 Voor deze studie werd gebruikgemaakt van een publieke RNA-seq dataset van synoviaal weefsel afkomstig van 4 reumatoïde artritis (RA) patiënten en 4 gezonde controles. Uit het synoviale weefsel werd totaal RNA geïsoleerd en vervolgens gebruikt voor RNA sequencing (RNA-seq), waarmee genexpressie op genome-wide niveau kan worden bepaald (Fraenkel et al., 2021; Stephenson et al., 2018).
 
