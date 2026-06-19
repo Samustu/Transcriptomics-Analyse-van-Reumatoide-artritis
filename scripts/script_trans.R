@@ -158,9 +158,6 @@ ggplot(topGO, aes(x = hitsPerc,
 #pathway
 res_def <- as.data.frame(resultaten)
 gene.data <- res_def$log2Foldchange
-resultaten2 <- res_def
-resultaten2[1] <- NULL
-resultaten2[2:5] <- NULL
 
 pathview(
   gene.data = resultaten,
