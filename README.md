@@ -11,22 +11,28 @@ Het doel van dit project is om met behulp van RNA-seq data inzicht te verkrijgen
 ---
 ## Workflow
 
-mermaid
+```mermaid
 flowchart LR
     A[Synoviaal weefsel] --> B[RNA-isolatie]
     B --> C[RNA-sequencing]
     C --> D[RNA-seq bestanden]
+
     E[Referentiegenoom] --> F[Indexeren]
     F --> G[Mapping]
+
     D --> G
     G --> H[BAM-bestanden]
+
     I[GTF-bestand] --> J[FeatureCounts]
     H --> J
+
     J --> K[Count matrix]
     K --> L[DESeq2]
+
     L --> M[Volcano plot]
     L --> N[GO-analyse]
     L --> O[KEGG-analyse]
+```
     
 ##  Methode  
 Voor deze studie werd gebruikgemaakt van een publieke RNA-seq dataset van synoviaal weefsel afkomstig van 4 reumatoïde artritis (RA) patiënten en 4 gezonde controles. Uit het synoviale weefsel werd totaal RNA geïsoleerd en vervolgens gebruikt voor RNA sequencing (RNA-seq), waarmee genexpressie op genome-wide niveau kan worden bepaald (Fraenkel et al., 2021; Stephenson et al., 2018).
