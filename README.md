@@ -41,7 +41,7 @@ De differentiële genexpressieanalyse met DESeq2 identificeerde meerdere genen d
   <img src="resultaten/Figuren/VolcanoplotWC.png" width="600">
 </p>
 
-**Figuur 1.** Volcano plot van de differentiële genexpressieanalyse tussen RA- en controlesamples.
+**Figuur 2.** Volcano plot van de differentiële genexpressieanalyse tussen RA- en controlesamples.
 
 Om de biologische betekenis van deze genexpressieveranderingen te onderzoeken, werd een Gene Ontology (GO)-analyse uitgevoerd. Hierbij werden voornamelijk immuungerelateerde biologische processen verrijkt, waaronder processen betrokken bij immuunrespons en activatie van immuuncellen.
 
@@ -49,7 +49,7 @@ Om de biologische betekenis van deze genexpressieveranderingen te onderzoeken, w
   <img src="resultaten/Figuren/GO_Results_plot.png" width="600">
 </p>
 
-**Figuur 2.** Top verrijkte GO-termen van de differentieel geëxprimeerde genen.
+**Figuur 3.** Top verrijkte GO-termen van de differentieel geëxprimeerde genen.
 
 Vervolgens werd een KEGG pathway-analyse uitgevoerd. Binnen de pathway *Autoimmune Thyroid Disease* (hsa05320) werden veranderingen gevonden in genen die betrokken zijn bij antigeenpresentatie en T-celactivatie. Deze resultaten suggereren dat verstoring van adaptieve immuunprocessen een belangrijke rol speelt bij reumatoïde artritis.
 
@@ -57,7 +57,7 @@ Vervolgens werd een KEGG pathway-analyse uitgevoerd. Binnen de pathway *Autoimmu
   <img src="resultaten/Figuren/hsa05320.pathview.png" width="600">
 </p>
 
-**Figuur 3.** KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) met weergegeven genexpressieveranderingen.
+**Figuur 4.** KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) met weergegeven genexpressieveranderingen.
 
 ---
 
