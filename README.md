@@ -35,29 +35,41 @@ Functionele analyse werd uitgevoerd met *goseq* (v1.56.0) voor Gene Ontology-ver
 ---
 
 ##  Resultaten  
-De differentiële genexpressieanalyse met DESeq2 identificeerde meerdere genen die significant verschilden tussen reumatoïde artritispatiënten en gezonde controles. Zowel opgereguleerde als neergereguleerde genen werden waargenomen, wat wijst op veranderingen in moleculaire processen die betrokken zijn bij de ziekte.
+De differentiële genexpressieanalyse met DESeq2 identificeerde meerdere significant differentieel geëxprimeerde genen tussen reumatoïde artritispatiënten en gezonde controles (padj < 0,05). Zowel opgereguleerde als neergereguleerde genen werden waargenomen, wat wijst op veranderingen in immuun- en ontstekingsgerelateerde processen.
 
 <p align="center">
   <img src="resultaten/Figuren/VolcanoplotWC.png" width="600">
 </p>
 
-**Figuur 2.** Volcano plot van de differentiële genexpressieanalyse tussen RA- en controlesamples.
+**Figuur 1.** Volcano plot van de differentiële genexpressieanalyse tussen RA- en controlesamples.
 
-Om de biologische betekenis van deze genexpressieveranderingen te onderzoeken, werd een Gene Ontology (GO)-analyse uitgevoerd. Hierbij werden voornamelijk immuungerelateerde biologische processen verrijkt, waaronder processen betrokken bij immuunrespons en activatie van immuuncellen.
+Om de biologische betekenis van deze genexpressieveranderingen te onderzoeken, werd een Gene Ontology (GO)-analyse uitgevoerd. Hierbij werden meerdere significant verrijkte biologische processen gevonden (over_represented_pvalue < 0,05), voornamelijk gerelateerd aan immuunrespons en activatie van immuuncellen.
 
 <p align="center">
   <img src="resultaten/Figuren/GO_Results_plot.png" width="600">
 </p>
 
-**Figuur 3.** Top verrijkte GO-termen van de differentieel geëxprimeerde genen.
+**Figuur 2.** Top verrijkte GO-termen van de differentieel geëxprimeerde genen.
 
-Vervolgens werd een KEGG pathway-analyse uitgevoerd. Binnen de pathway *Autoimmune Thyroid Disease* (hsa05320) werden veranderingen gevonden in genen die betrokken zijn bij antigeenpresentatie en T-celactivatie. Deze resultaten suggereren dat verstoring van adaptieve immuunprocessen een belangrijke rol speelt bij reumatoïde artritis.
+De KEGG pathway-analyse van *Autoimmune Thyroid Disease* (hsa05320) liet veranderingen zien in genen betrokken bij antigeenpresentatie en T-celactivatie.
 
 <p align="center">
   <img src="resultaten/Figuren/hsa05320.pathview.png" width="600">
 </p>
 
-**Figuur 4.** KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) met weergegeven genexpressieveranderingen.
+**Figuur 3.** KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) met weergegeven genexpressieveranderingen.
+
+**Tabel 2.** Belangrijke genen en immuunmechanismen binnen de KEGG pathway *Autoimmune Thyroid Disease* (hsa05320).
+
+| Gen | Verandering | Functie | Relevantie voor RA |
+|------|------------|----------|-------------------|
+| MHC II | Verhoogd | Antigeenpresentatie aan T-cellen | Activeert adaptieve immuunrespons |
+| CD28 | Verhoogd | Co-stimulatie van T-cellen | Versterkt T-celactivatie |
+| IL-4 | Verhoogd | Cytokine voor immuunregulatie | Betrokken bij ontstekingsreacties |
+| MHC I | Verlaagd | Antigeenpresentatie aan cytotoxische T-cellen | Veranderde immuunactiviteit |
+| IL-2 | Verlaagd | Regulatie van T-cellen | Verstoorde immuunregulatie |
+
+De verhoogde expressie van MHC II, CD28 en IL-4 wijst op een versterkte activatie van het adaptieve immuunsysteem. Daarnaast suggereren de lagere expressieniveaus van MHC I en IL-2 een verstoring van de normale immuunregulatie. Hoewel deze pathway oorspronkelijk betrekking heeft op auto-immuun schildklierziekten, weerspiegelt zij algemene auto-immuunmechanismen die ook kenmerkend zijn voor reumatoïde artritis.
 
 ---
 
