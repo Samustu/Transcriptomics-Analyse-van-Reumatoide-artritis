@@ -2,11 +2,11 @@
 #  Transcriptomics-Analyse-van-Reumatoïde-artritis
 
 ##  Inleiding  
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door ontsteking van synoviaal weefsel en progressieve gewrichtsschade. In deze aandoening migreren immuuncellen zoals T‑cellen, B‑cellen en macrofagen naar het gewricht, waar zij ontstekingsprocessen en weefselafbraak veroorzaken (Miyabe et al., 2020). Chemokines en cytokines spelen hierbij een belangrijke rol doordat zij de activatie en rekrutering van immuuncellen reguleren en zo bijdragen aan de pathologie van RA (Miyabe et al., 2020).  
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door ontsteking van synoviaal weefsel en progressieve gewrichtsschade. Immuuncellen zoals T-cellen, B-cellen en macrofagen infiltreren het gewricht en veroorzaken ontstekingsprocessen en weefselafbraak (Miyabe et al., 2020). Chemokines en cytokines spelen hierbij een belangrijke rol doordat zij de activatie en migratie van immuuncellen reguleren (Miyabe et al., 2020).
 
-RNA sequencing (RNA-seq) maakt het mogelijk om genexpressie op genome-wide niveau te analyseren en verschillen tussen ziekte en controle te identificeren. Deze techniek wordt veel gebruikt om moleculaire mechanismen van ziekten te bestuderen en nieuwe biologische inzichten te verkrijgen (Love et al., 2014; Stephenson et al., 2018).  
+RNA sequencing (RNA-seq) maakt het mogelijk om genexpressie op genome-wide niveau te analyseren en verschillen tussen ziekte en controle te identificeren. Deze techniek wordt veel toegepast om de moleculaire mechanismen achter complexe ziekten, zoals RA, beter te begrijpen (Love et al., 2014; Stephenson et al., 2018).
 
-Het doel van dit project is om met behulp van RNA-seq data differentieel geëxprimeerde genen tussen RA-patiënten en gezonde controles te identificeren. Daarnaast wordt onderzocht welke biologische processen (Gene Ontology) en pathways (KEGG) betrokken zijn bij de ziekte. Deze analyse draagt bij aan een beter begrip van de moleculaire basis van RA.
+Het doel van dit project is om met behulp van RNA-seq data inzicht te verkrijgen in de moleculaire processen die betrokken zijn bij reumatoïde artritis. Hiervoor wordt eerst onderzocht welke genen significant differentieel geëxprimeerd zijn tussen RA-patiënten en gezonde controles. Vervolgens wordt met een Gene Ontology (GO)-analyse bepaald welke biologische processen verrijkt zijn onder deze differentieel geëxprimeerde genen. Ten slotte wordt gekeken welke genen en immuunmechanismen betrokken zijn binnen de KEGG pathway *Autoimmune Thyroid Disease* (hsa05320) en hoe deze samenhangen met de gevonden genexpressieveranderingen. Door deze analyses te combineren kan beter worden begrepen welke moleculaire en immunologische processen een rol spelen bij RA.
 
 ---
 
