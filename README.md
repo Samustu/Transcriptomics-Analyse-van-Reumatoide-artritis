@@ -20,11 +20,13 @@ Differentiële genexpressieanalyse is uitgevoerd met DESeq2 (v1.44.0), waarbij g
 Functionele analyse is uitgevoerd met goseq (v1.56.0) voor Gene Ontology, waarbij bias in RNA-seq data wordt gecorrigeerd. KEGG pathway analyse is uitgevoerd met KEGGREST (v1.44.0) en gevisualiseerd met pathview (v1.44.0).  
 
 
-| **Naam**   |     **Conditie**     |
-| SRR4785819 | Normal               |
-| SRR4785820 | Normal               |
-| SRR4785828 | Normal               |
-| SRR4785831 | Normal               |
+
+| Naam | Conditie |
+|------|-----------|
+| SRR4785819 | Normal |
+| SRR4785820 | Normal |
+| SRR4785828 | Normal |
+| SRR4785831 | Normal |
 | SRR4785979 | Rheumatoid arthritis |
 | SRR4785980 | Rheumatoid arthritis |
 | SRR4785986 | Rheumatoid arthritis |
