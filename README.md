@@ -1,5 +1,5 @@
 
-#  Transcriptomics-Analyse-van-Reumatoïde-artritis
+#  Genexpressieanalyse wijst op verstoring van immuungerelateerde processen bij reumatoïde artritis
 
 ##  Inleiding  
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte die wordt gekenmerkt door ontsteking van synoviaal weefsel en progressieve gewrichtsschade. Immuuncellen zoals T-cellen, B-cellen en macrofagen infiltreren het gewricht en veroorzaken ontstekingsprocessen en weefselafbraak (Miyabe et al., 2020). Chemokines en cytokines spelen hierbij een belangrijke rol doordat zij de activatie en migratie van immuuncellen reguleren (Miyabe et al., 2020).
